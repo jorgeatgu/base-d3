@@ -1,14 +1,13 @@
 {
   "name": "base-d3",
   "version": "2.0.0",
-  "description": "base para cualquier proyecto de visualización de datos | Jorge Aznar {data/designer} http://jorgeatgu.com",
+  "description": "Base para cualquier proyecto de visualización de datos | Jorge Aznar {civic/data/designer} https://jorgeatgu.com",
   "main": "gulpfile.js",
   "repository": "jorgeatgu/base",
   "keywords": [
-    "css",
-    "postcss",
-    "gulp",
-    "init"
+    "init",
+    "d3",
+    "dataViz"
   ],
   "author": "Jorge Aznar",
   "lint-staged": {
