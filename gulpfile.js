@@ -16,6 +16,7 @@ notify = require('gulp-notify');
 stylelint = require('stylelint');
 browserSync = require('browser-sync');
 babel = require('gulp-babel');
+postcssNormalize = require('postcss-normalize');
 
 var paths = {
   js: 'src/js',
@@ -128,7 +129,11 @@ gulp.task('css', function() {
         sorting({
             "sort-order": "csscomb"
         }),
-        autoprefixer
+        autoprefixer,
+        postcssNormalize({
+            browsers: 'last 2 versions',
+            forceImport: true
+        }),
     ];
     return gulp.src('src/css/styles.css')
 

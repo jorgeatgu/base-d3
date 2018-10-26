@@ -43,6 +43,7 @@
     "postcss-nested": "^4.1.0",
     "postcss-reporter": "^6.0.0",
     "postcss-sorting": "^4.0.0",
+    "postcss-normalize": "^7.0.1",
     "pre-commit": "^1.2.2",
     "stylelint": "^9.6.0"
   },
