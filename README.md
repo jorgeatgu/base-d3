@@ -6,11 +6,11 @@ La idea es similar a la de [base](https://github.com/jorgeatgu/base) pero en est
 
 Cambios: 
 
-- Babel para usar algunas funcionales de ES6
+- Babel para usar algunas funcionalidades de ES6.
 - Terser para minificar y ofuscar el código.
 - Por ahora me quedo con la v4.13.0 de d3.js. Próximamente a la v5
 
-Ejemplos de gráficas hechas con d3 y que realmente son responsive: https://aclau-lmdietzfyt.now.sh
+Ejemplos de gráficas hechas con d3 y que realmente son responsive: https://aclau-iedsnsvmze.now.sh
 
 Repositorio con todos los ejemplos: [A clau](https://github.com/jorgeatgu/clau)
 
