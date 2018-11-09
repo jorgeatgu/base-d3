@@ -189,7 +189,7 @@ gulp.task('default', ["browserSync"], function() {
     gulp.watch(watch.css, { interval: 300 }, ['css']);
     gulp.watch(watch.images, { interval: 300 }, ['images']);
     gulp.watch(watch.js, { interval: 300 }, ['babel', 'compress']);
-    gulp.watch(["./*.html", "css/*.css", "js/*.js"]).on("change", browserSync.reload);
+    gulp.watch(["./*.html", "css/*.css", "js/*.js", "csv/*.csv", "json/*.json"]).on("change", browserSync.reload);
 });
 
 
