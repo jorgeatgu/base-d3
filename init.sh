@@ -1,19 +1,19 @@
 #!/bin/bash
 
-function initCSS() {
+function initd3 {
     echo -n "\e[94m\e[1mVamos a lanzar base-d3 ¿ya has creado una carpeta? (s/n): "
-    read answer
+    read -r answer
         if echo "$answer" | grep -iq "^s" ;
     then
         echo "Perfecto, vamos a comenzar con Base"
         initConCarpeta;
     else
         echo -n "Elige el nombre de tu proyecto: "
-        read var_name &&
-        mkdir $var_name &&
-        cd $var_name &&
+        read -r var_name &&
+        mkdir "$var_name" &&
+        cd "$var_name" &&
         mkdir css src js img csv &&
-        curl -O "https://raw.githubusercontent.com/jorgeatgu/base-d3/master/{.stylelintrc,.gitignore,.stylelintignore,package.json,gulpfile.js,index.html,d3.min.js}" &&
+        curl -O "https://raw.githubusercontent.com/jorgeatgu/base-d3/master/{.stylelintrc,.gitignore,.stylelintignore,.prettierrc.json,package.json,gulpfile.js,index.html,d3.min.js,rollup.config.js,index.js}" &&
         cd src &&
         mkdir css img js &&
         cd css &&
@@ -22,12 +22,9 @@ function initCSS() {
         touch index.js &&
         cd .. &&
         cd .. &&
-        cd js &&
-        curl -O "https://raw.githubusercontent.com/jorgeatgu/base-d3/master/d3.min.js" &&
-        cd .. &&
         git init &&
         git add . &&
-        git commit -m 'estructura creada' &&
+        git commit -m 'initial commit | structure created' &&
         echo -e '\e[94m\e[1mEsto va a costar un poco' &&
         npm i &&
         echo -e '\e[94m\e[1mEl script ha terminado. Es hora de picar código! \U0001f913\n' &&
