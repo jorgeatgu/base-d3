@@ -1,9 +1,11 @@
-import node from "rollup-plugin-node-resolve";
+import node from 'rollup-plugin-node-resolve';
 
 export default {
-  entry: "index.js",
-  format: "umd",
-  moduleName: "d3",
-  plugins: [node()],
-  dest: "d3.js"
+    input: 'index.js',
+    output: {
+        file: 'd3.js',
+        format: 'umd',
+        name: 'd3'
+    },
+    plugins: [node()]
 };
