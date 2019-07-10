@@ -1,6 +1,6 @@
 {
   "name": "base-d3",
-  "version": "3.0",
+  "version": "3.0.0",
   "description": "Base para cualquier proyecto de visualización de datos | Jorge Aznar {civic/data/designer} https://jorgeatgu.com",
   "main": "gulpfile.js",
   "repository": "jorgeatgu/base",
